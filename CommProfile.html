@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>
+            Kings of meet
+        </title>
+    </head>
+    <body style="background-color: rgb(108, 255, 253);">
+        <center>
+        <h2 style="background-color:antiquewhite;font-style: italic;">
+            Welcome Our Kings of Meet App
+        </h2>
+        </center>
+        </body>
+        <hr>
+        <!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #fc3ef9;
+      color: white;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .container {
+      margin-top: 40px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #47ef2d;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #370cf7;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Video World
+  </header>
+
+  <div class="container">
+    <h2>Join a Call</h2>
+    <input type="text" id="roomInput" placeholder="Enter Room ID" />
+    <button onclick="joinRoom()">Join Call</button>
+
+    <hr style="margin: 30px 0;" />
+
+    <h2>Start a New Call</h2>
+    <button onclick="startNewCall()">Create New Room</button>
+  </div>
+
+  <footer>
+    &copy; 2025 VideoWorld Comms Inc.
+  </footer>
+
+  <script>
+    function joinRoom() {
+      const roomId = document.getElementById("roomInput").value.trim();
+      if (roomId) {
+        window.location.href = 'file:///C:/Users/rithi/OneDrive/Desktop/Task%203/Task3.html/Join%20a%20call/join.html';
+      } else {
+        alert("Please enter a valid Room ID");
+      }
+    }
+
+    function startNewCall() {
+      const newRoomId = "room-" + Math.random().toString(36).substring(2, 10);
+      window.location.href ='file:///C:/Users/rithi/OneDrive/Desktop/Task%203/Task3.html/Startnewcall/start.html';
+    }
+  </script>
+</body>
+</html>
+
+</html>
